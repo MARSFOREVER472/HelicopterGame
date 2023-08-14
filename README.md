@@ -8,8 +8,8 @@
 
 Objetivos de esta lección:
 
-- Crea un juego arcade de acción completa
-- Mantener la puntuación en el juego y mostrar la salida
+- Crear un juego arcade de acción completa.
+- Mantener la puntuación en el juego y mostrar su salida.
 - Uso de métodos de selección para lograr resultados en el juego.
 - Usando la iteración "foreach" para rastrear, animar y eliminar las balas del juego.
 - Usar varios componentes en Windows Forms para crear un juego.
