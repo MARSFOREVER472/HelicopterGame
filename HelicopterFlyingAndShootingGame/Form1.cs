@@ -49,5 +49,35 @@ namespace HelicopterFlyingAndShootingGame
         {
             // EN INSTANTES...
         }
+
+        // Métodos para reiniciar, finalizar la partida, eliminar las balas y cambiar alienígenas, respectivamente.
+
+        // Para reiniciar el juego.
+
+        private void restartGame()
+        {
+            // EN INSTANTES...
+        }
+
+        // Para finalizar la partida.
+
+        private void gameOver()
+        {
+            // EN INSTANTES...
+        }
+
+        // Para eliminar las balas lanzadas.
+
+        private void eliminarBalas()
+        {
+            // EN INSTANTES...
+        }
+
+        // Para cambiar de alienígenas.
+
+        private void cambiarUFOs()
+        {
+            // EN INSTANTES...
+        }
     }
 }
