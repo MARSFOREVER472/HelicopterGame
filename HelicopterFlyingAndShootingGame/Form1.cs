@@ -40,7 +40,35 @@ namespace HelicopterFlyingAndShootingGame
 
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
-            // EN INSTANTES...
+            // Cuando se presionan las teclas de arriba y abajo:
+            
+            if (e.KeyCode == Keys.Up) // Si el helicóptero va hacia arriba.
+            {
+                // Si el jugador ha presionado la tecla de arriba,
+                // cambiaremos el modo de ir hacia arriba a verdadero.
+
+                goUp = true; // Arriba.
+            }
+
+            if (e.KeyCode == Keys.Down) // Si el helicóptero va hacia abajo.
+            {
+                // Si el jugador ha presionado la tecla de abajo,
+                // cambiaremos el modo de ir hacia abajo a verdadero.
+
+                goDown = true; // Abajo.
+            }
+
+            if (e.KeyCode == Keys.Space && disparar == false)
+            {
+                // Si el jugador ha presionado la tecla "Espacio"
+                // y el disparo booleano es falso cuando lo crearon,
+                // luego ejecutaremos la función de crear las balas
+                // y cambiar el modo de disparo de falso a verdadero.
+
+                crearBalas();
+                disparar = true;
+            }
+
         }
 
         // Método que permite interactuar al jugador soltando una tecla del teclado.
@@ -76,6 +104,13 @@ namespace HelicopterFlyingAndShootingGame
         // Para cambiar de alienígenas.
 
         private void cambiarUFOs()
+        {
+            // EN INSTANTES...
+        }
+
+        // Para crear las balas respectivas.
+
+        private void crearBalas()
         {
             // EN INSTANTES...
         }
