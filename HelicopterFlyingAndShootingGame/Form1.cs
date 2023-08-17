@@ -75,7 +75,23 @@ namespace HelicopterFlyingAndShootingGame
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
-            // EN INSTANTES...
+            // Crearemos un algoritmo sencillo al soltar las teclas del teclado.
+
+            if (e.KeyCode == Keys.Up) // Si la tecla de arriba está suelta.
+            {
+                goUp = false; // Suelta la tecla de arriba del teclado.
+            }
+
+            if (e.KeyCode == Keys.Down) // Si la tecla de abajo está suelta.
+            {
+                goDown = false; // Suelta la tecla de abajo del teclado.
+            }
+
+            if (disparar == true) // Si dispara una de sus balas del helicóptero.
+            {
+                disparar = false; // No lo va a disparar.
+            }
+
         }
 
         // Métodos para reiniciar, finalizar la partida, eliminar las balas y cambiar alienígenas, respectivamente.
@@ -89,7 +105,7 @@ namespace HelicopterFlyingAndShootingGame
 
         // Para finalizar la partida.
 
-        private void gameOver()
+        private void GameOver()
         {
             // EN INSTANTES...
         }
