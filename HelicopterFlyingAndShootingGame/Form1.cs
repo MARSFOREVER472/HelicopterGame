@@ -96,35 +96,73 @@ namespace HelicopterFlyingAndShootingGame
 
         // Métodos para reiniciar, finalizar la partida, eliminar las balas y cambiar alienígenas, respectivamente.
 
-        // Para reiniciar el juego.
+        // 1.- Para reiniciar el juego.
 
         private void restartGame()
         {
             // EN INSTANTES...
         }
 
-        // Para finalizar la partida.
+        // 2.- Para finalizar la partida.
 
         private void GameOver()
         {
             // EN INSTANTES...
         }
 
-        // Para eliminar las balas lanzadas.
+        // 3.- Para eliminar las balas lanzadas.
 
         private void eliminarBalas()
         {
             // EN INSTANTES...
         }
 
-        // Para cambiar de alienígenas.
+        // 4.- Para cambiar de alienígenas.
 
         private void cambiarUFOs()
         {
-            // EN INSTANTES...
+            // Durante el juego, los alienígenas pueden aparecerse aleatoriamente de a 1.
+
+            index += 1; // Aumenta el valor de su índice en 1.
+
+            if (index > 3)
+            {
+                // Si el valor de los índices es mayor que 3,
+                // hay que ponerlo de nuevo a 1.
+
+                index = 1;
+
+                // 1.- Usaremos la instrucción "switch" para cambiar entre imágenes de los alienígenas.
+                // 2.- Al usar el número en el índice podemos cambiarlos de manera efectiva.
+                // 3.- Cuando los números en el índice cambien, seguirá esta declaración de intercambio.
+
+                switch (index)
+                {
+                    // 1.- Si el número en el índice es igual a 1.
+                    // 2.- Luego mostraremos la apariencia del alienígena 1 en el cuadro de imagen del OVNI.
+
+                    case 1:
+                        ufo.Image = Properties.Resources.alien1;
+                        break;
+
+                    // 1.- Si el número en el índice es igual a 2.
+                    // 2.- Luego mostraremos la apariencia del alienígena 2 en el cuadro de imagen del OVNI.
+
+                    case 2:
+                        ufo.Image = Properties.Resources.alien2;
+                        break;
+
+                    // 1.- Si el número en el índice es igual a 3.
+                    // 2.- Luego mostraremos la apariencia del alienígena 3 en el cuadro de imagen del OVNI.
+
+                    case 3:
+                        ufo.Image = Properties.Resources.alien3;
+                        break;
+                }
+            }
         }
 
-        // Para crear las balas respectivas.
+        // 5.- Para crear las balas respectivas.
 
         private void crearBalas()
         {
